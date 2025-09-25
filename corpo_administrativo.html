@@ -1,0 +1,186 @@
+<style>
+/* Layout geral */
+.page-container {
+  font-family: "Segoe UI", sans-serif;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Caixa das seções principais */
+.section {
+  margin-bottom: 50px;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid rgba(0,0,0,0.1);
+  background: #fafafa;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+/* Caixa das subseções */
+.subsection {
+  margin: 20px 0 30px 0;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: #fff;
+}
+
+/* Títulos principais */
+.section h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+/* Títulos das subseções */
+.subsection h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: #fff;
+}
+
+/* Cores por setor */
+.direcao h2 { background-color: #2E86C1; }
+.direcao .subsection h3 { background-color: #5DADE2; }
+
+.secretaria h2 { background-color: #1ABC9C; }
+.secretaria .subsection h3 { background-color: #48C9B0; }
+
+.academica h2 { background-color: #9B59B6; }
+.academica .subsection h3 { background-color: #AF7AC5; }
+
+.assuntos-estudantis h2 { background-color: #E67E22; }
+.assuntos-estudantis .subsection h3 { background-color: #EB984E; }
+
+.planejamento h2 { background-color: #27AE60; }
+.planejamento .subsection h3 { background-color: #52BE80; }
+
+.biblioteca h2 { background-color: #C0392B; }
+.biblioteca .subsection h3 { background-color: #CD6155; }
+
+/* Grid de cartões */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+  font-weight: bold;
+}
+</style>
+
+<div class="page-container">
+
+  <!-- Direção -->
+  <div class="section direcao">
+    <h2>Direção</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="LINK-IMAGEM" alt="Samuel de Oliveira">
+        <h3>Samuel de Oliveira</h3>
+        <p>Diretor</p>
+      </div>
+      <div class="card">
+        <img src="LINK-IMAGEM" alt="Jacimara Villar">
+        <h3>Jacimara Villar</h3>
+        <p>Vice-Diretora</p>
+      </div>
+    </div>
+
+    <!-- Sub: Secretaria da Direção -->
+    <div class="subsection">
+      <h3>Secretaria</h3>
+      <div class="cards">
+        <div class="card"><img src="LINK-IMAGEM" alt="Alex Zuza"><h3>Alex Zuza</h3></div>
+        <div class="card"><img src="LINK-IMAGEM" alt="Cesar Souza"><h3>Cesar Souza</h3></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Coordenadoria de Planejamento e Administração -->
+  <div class="section planejamento">
+    <h2>Coordenadoria de Planejamento e Administração</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="LINK-IMAGEM" alt="José Anjo">
+        <h3>José Anjo</h3>
+        <p>Coordenador</p>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3>Contabilidade e Finanças</h3>
+      <div class="cards">
+        <div class="card"><img src="LINK-IMAGEM" alt="Hudson Hernane"><h3>Hudson Hernane</h3></div>
+        <div class="card"><img src="LINK-IMAGEM" alt="Rosineide Tertulino"><h3>Rosineide Tertulino</h3></div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3>Compras e Contratos</h3>
+      <div class="cards">
+        <div class="card"><img src="LINK-IMAGEM" alt="Antônio Júnior"><h3>Antônio Júnior</h3></div>
+        <div class="card"><img src="LINK-IMAGEM" alt="Emerson Fábio"><h3>Emerson Fábio</h3></div>
+        <div class="card"><img src="LINK-IMAGEM" alt="Isabel Carolina"><h3>Isabel Carolina</h3></div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3>Tecnologia da Informação</h3>
+      <div class="cards">
+        <div class="card"><img src="LINK-IMAGEM" alt="Daniel Lucas"><h3>Daniel Lucas</h3></div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3>Gestão de Pessoas</h3>
+      <div class="cards">
+        <div class="card"><img src="LINK-IMAGEM" alt="Leandro Marques"><h3>Leandro Marques</h3></div>
+        <div class="card"><img src="LINK-IMAGEM" alt="Maria José"><h3>Maria José</h3></div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3>Infraestrutura</h3>
+      <div class="cards">
+        <div class="card"><img src="LINK-IMAGEM" alt="Eduardo Graciliano"><h3>Eduardo Graciliano</h3></div>
+        <div class="card"><img src="LINK-IMAGEM" alt="Ozamir Dantas"><h3>Ozamir Dantas</h3></div>
+        <div class="card"><img src="LINK-IMAGEM" alt="Rodrigo Lacerda"><h3>Rodrigo Lacerda</h3></div>
+      </div>
+    </div>
+  </div>
+</div>
