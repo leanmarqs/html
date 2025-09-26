@@ -7,53 +7,61 @@
   margin: auto;
 }
 
+/* Caixa das seções principais */
 .section {
   margin-bottom: 50px;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid rgba(0,0,0,0.1);
+  background: #fafafa;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
 }
 
+/* Caixa das subseções */
+.subsection {
+  margin: 20px 0 30px 0;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: #fff;
+}
+
+/* Títulos principais */
 .section h2 {
-  font-size: 28px;
+  font-size: 26px;
   margin-bottom: 20px;
   padding: 10px 15px;
   border-radius: 8px;
   color: #fff;
 }
 
-/* Subseções */
-.subsection {
-  margin: 25px 0;
-}
-
+/* Títulos das subseções */
 .subsection h3 {
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 15px;
   padding: 8px 12px;
   border-radius: 6px;
   color: #fff;
 }
 
-/* Cores das seções */
+/* Cores por setor */
 .direcao h2 { background-color: #2E86C1; }
-.secretaria-direcao h3 { background-color: #5DADE2; }
-
-.biblioteca h2 { background-color: #C0392B; }
-
-.academica h2 { background-color: #9B59B6; }
-.secretaria-academica h3 { background-color: #AF7AC5; }
-.registro-escolar h3 { background-color: #AF7AC5; }
-.laboratorios h3 { background-color: #AF7AC5; }
-.setor-pedagogico h3 { background-color: #AF7AC5; }
-
-.assuntos-estudantis h2 { background-color: #E67E22; }
-
-.planejamento h2 { background-color: #27AE60; }
-.contabilidade h3 { background-color: #52BE80; }
-.compras h3 { background-color: #52BE80; }
-.ti h3 { background-color: #52BE80; }
-.gestao-pessoas h3 { background-color: #52BE80; }
-.infraestrutura h3 { background-color: #52BE80; }
+.direcao .subsection h3 { background-color: #5DADE2; }
 
 .secretaria h2 { background-color: #1ABC9C; }
+.secretaria .subsection h3 { background-color: #48C9B0; }
+
+.academica h2 { background-color: #9B59B6; }
+.academica .subsection h3 { background-color: #AF7AC5; }
+
+.assuntos-estudantis h2 { background-color: #E67E22; }
+.assuntos-estudantis .subsection h3 { background-color: #EB984E; }
+
+.planejamento h2 { background-color: #27AE60; }
+.planejamento .subsection h3 { background-color: #52BE80; }
+
+.biblioteca h2 { background-color: #C0392B; }
+.biblioteca .subsection h3 { background-color: #CD6155; }
 
 /* Grid de cartões */
 .cards {
@@ -94,6 +102,7 @@
   font-weight: bold;
 }
 </style>
+
 
 <div class="page-container">
 
